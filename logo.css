@@ -1,0 +1,19 @@
+.logo{
+  animation-name:bounce;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+.logo:hover{
+  animation-play-state: running;
+}
+
+@keyframes bounce{
+  0%{transform:translateY(0px);}
+  25%{transform:rotate(.02turn);}
+  50%{transform:translateY(-15px) rotate(-.02turn);}
+  75%{transform: translateY(10px) rotate(.02turn);}
+  100%{transform:translateY(0px) rotate(-.02turn);}
+}

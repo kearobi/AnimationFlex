@@ -1,0 +1,35 @@
+body {
+  background-color: #bae1ff;
+}
+@keyframes sun {
+  0% {transform: translateX(2000px);}
+  100%{transform: translateX(500px);}
+}
+@keyframes ocloud {
+  0% {transform: translate(-1500px,100px);}
+  100% {transform: translate(1100px,-700px);}
+}
+@keyframes kirby {
+  0% {transform: translate(-500px,200px);}
+  50%{transform: translate(500px,-400px);}
+  100%{transform: translate(1500px,400px);}
+
+}
+
+.ani_sun {
+  animation-name: sun;
+  animation-duration: 10s;
+  animation-fill-mode:forwards;
+}
+.ani_orange {
+  animation-name: ocloud;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.ani_kirby {
+  animation-name: kirby;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
